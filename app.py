@@ -67,7 +67,7 @@ else:
 st.subheader('Your Report')
 st.markdown(f"<h6 style='color: {color};'>{output}</h6>", unsafe_allow_html=True)
 st.subheader('Accuracy: ')
-st.wreite(str(accuracy_score(y_test, rf.predict(X_test)) * 100) + '%')
+st.write(str(accuracy_score(y_test, rf.predict(X_test)) * 100) + '%')
 
 # Age vs Insulin
 st.header('Insulin Value Graph (Others vs Yours)')
